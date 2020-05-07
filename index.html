@@ -2,145 +2,385 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Saylani Welfare Trust </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./images/favicon.png" type="image/gif" sizes="16x16" />
 
-
-
+  <script src="https://kit.fontawesome.com/d907e12751.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <img id="logo" src="./Saylani-logo.png" alt="logo">
-    <h2>STUDENT REGISTRATION FORM</h2>
+  <!-- Header open -->
+  <div class="main">
+    <div class="icon">
+      <i class="fa fa-facebook-f"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-youtube "></i>
+      <i class="fa fa-whatsapp "></i>
+    </div>
+    <div class="wrd">
+      <p>
+        Millions of people's life has changed, millions more awaiting your
+        donation
+      </p>
+    </div>
+    <div class="btn"><button type="button">
+        UK Doners
+      </button>
+      </a> <button type="button">
+        Donate Now
+      </button>
+      <button type="button">
+        SMIT Results
+      </button>
+    </div>
+  </div>
+  <!-- Header Closed -->
+  <!-- Navbar -->
+  <nav class="nav-links">
     <div>
-    <form>
-        <br />
-        <label>&nbsp; FIRST NAME</label>
-        <input type="input" placeholder="Enter first name" id="firstName"/>
-        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  (max 30 characters a-z and A-Z)</label>
-        <br />
-        <br />
-        <label>&nbsp; LAST NAME</label>
-        <input type="input" placeholder="Enter last name" id="lastName"/>
-        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(max 30 characters a-z and A-Z)</label>
-        <br />
-        <br /> 
-        <label>&nbsp; DATE OF BIRTH&nbsp; &nbsp; &nbsp;</label>
-        <select id="day">
-             <option>Day:</option>
-        </select>
-        <select id="month">
-            <option>Month:</option>
-        </select>
-        <select id="year">
-            <option>Year:</option>
-        </select>
-        <br />
-        <br /> 
-        <label>&nbsp; EMAIL ID</label>
-        <input type="input" placeholder="Enter email address " id="email"/>
-        <br />
-        <br /> 
-        <label>&nbsp; MOBILE NUMBER</label>
-        <input type="number" placeholder="Enter mobile number " id="mob-no"/>
-        <label>&nbsp; (10 digit number)</label>
-        <br />
-        <br /> 
-        <label>&nbsp; GENDER </label>
-        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Male</label>
-        <input type="radio" value="male"/>
-        <label>Female</label>
-        <input type="radio" value="female"/>
-        <br />
-        <br />
-        <label id="address"> ADDRESS</label>
-        <textarea name="address"></textarea>
-        <br />
-        <br />
-        <label>&nbsp; CITY</label>
-        <input type="input" placeholder="Enter city name" id="cityName"/>
-        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (max 30 characters a-z and A-Z)</label>
-        <br />
-        <br />
-        <label>&nbsp; PIN CODE</label>
-        <input type="number" placeholder="Enter pincode" id="pincode">
-        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (6 digit number)</label>
-        <br />
-        <br />
-        <label>&nbsp; STATE</label>
-        <input type="input" placeholder="Enter state" id="state"/>
-        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(max 30 characters a-z and A-Z)</label>
-        <br />
-        <br />
-        <label>&nbsp; COUNTRY</label>
-        <input type="input" placeholder="Enter country" id="country"/>
-        <br />
-        <br />
-        <label>&nbsp; HOBBIES</label>
-        <label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Drawing</label>
-        <input type="checkbox" value="drawing">
-        <label> &nbsp; Singing</label>
-        <input type="checkbox" value="singing">
-        <label> &nbsp; Dancing</label>
-        <input type="checkbox" value="dancing">
-        <label> &nbsp; Sketching</label>
-        <input type="checkbox" value="sketching">
-        <br />
-        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Others</label>
-        <input type="checkbox" value="dancing">
-        <input type="input" id="other"/>
-        <br />
-        <br />
-        <label> &nbsp; QUALIFICATION</label>
-        <label> &nbsp; &nbsp; Sl.No.Examination</label>
-        <label id="board"> Board</label>
-        <label id="percentage"> Percentage</label>
-        <label id="year-o-p"> Year of Passing</label>
-        <ol>
-            <li id="class-x">Class X
-                <input type="input" class="input-x"/>
-                <input type="input" class="input-x"/>
-                <input type="input" class="input-x"/>
-            </li>
-            <li id="class-xii">Class XII
-                <input type="input" class="input-xii"/>
-                <input type="input" class="input-xii"/>
-                <input type="input" class="input-xii"/>
-            </li>
-            <li id="graduation">Graduation
-                <input type="input" class="input-graduation"/>
-                <input type="input" class="input-graduation"/>
-                <input type="input" class="input-graduation"/>
-            </li>
-            <li id="masters">Masters
-                <input type="input" class="input-masters"/>
-                <input type="input" class="input-masters"/>
-                <input type="input" class="input-masters"/>
-            </li>
-            <br />
-        </ol>
-        <label id="char10">(10 char max)</label>
-        <label id="decimal2">(upto 2 decimal)</label>
-        <br />
-        <label>&nbsp; COURSES <br />&nbsp; APPLIED FOR</label>
-        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BCA</label>
-        <input type="radio" value="BCA"/>
-        <label>B.Com</label>
-        <input type="radio" value="B.Com"/>
-        <label>B.Sc</label>
-        <input type="radio" value="B.Sc"/>
-        <label>B.A</label>
-        <input type="radio" value="B.Com"/>
-        <br />
-        <br />
-        <br />
-        <button><a href="./submit.html">Submit</a></button>
-        <button>Reset</button>
-        <br />
-    </form>
-</div>
+      <img src="Saylani-logo.png" style="height: 70px; width: 300px;" alt="">
+    </div>
+
+    <ul>
+      <li><input  type="reset" value="Home"> </li>
+      <li><input  type="reset" value="About"> </li>
+      <li><input  type="button" value="Saylani services"></li>
+      <li> <input  type="submit" value="Fature Project"> </li>
+      <li><input  type="reset" value="Media"> </li>
+      <li><input  type="reset" value="News"> </li>
+      <li><input  type="reset" value="Donation"> </li>
+
+    </ul>
+
+
+  </nav>
+
+
+  <!-- Navbar Closed -->
+  <!-- Slider -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="one.jpeg class=" d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="two.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="three.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Slider Closed -->
+  <!-- Marque -->
+  <div>
+
+    <p class="marq">
+      <marquee direction="left" scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();">
+        <font color="#00FF00">(News-1 Dated:15-06-2019)<font color="#FFFFFF">&#160;&#160;PIAICNext Phase Admission in
+            Islamabad And Faisalabad" . <a
+              href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3441173892575196/?type=3&theater"
+              style="color: blue">More Details</a> &#160;&#160;
+            <font color="#00FF00">(News-2 Dated:15-05-2019)<font color="#FFFFFF">&#160;&#160;Saylani Welfare Announced
+                "Donation Application" . <a
+                  href="https://web.facebook.com/saylaniwelfare/photos/a.258515937507690/3332489120110341/?type=3&theater"
+                  style="color: blue">More Details</a> &#160;&#160;
+                <font color="#00FF00">(News-3 Dated:07-05-2019)<font color="#FFFFFF">&#160;&#160;Alhamdulillah Saylani
+                    Organized 200+ Locations For Iftar And Sehri In This Holy Month . <a
+                      href="https://www.facebook.com/saylaniwelfare/?type=3&theater" style="color: blue">More
+                      Details</a> &#160;&#160;
+                    <font color="#00FF00">(News-4 Dated:08-03-2019)<font color="#FFFFFF">&#160;&#160;Saylani Welfare
+                        Distributing Ration & Clothes to affected people of Balochistan. <a
+                          href="https://www.facebook.com/saylaniwelfare/posts/3164679946891260?__tn__=-R"
+                          style="color: blue">More Details</a> &#160;&#160;
+                        <font color="#00FF00">(News-5 Dated:25-02-2019)<font color="#FFFFFF">&#160;&#160;PIAIC Entrance
+                            Exam Merit Ranking List Announced. <a
+                              href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3135220066503915/?type=3&theater>"
+                              style="color: blue">More Details</a>&#160;&#160;
+                            <font color="#00FF00">(News-6 Dated:23-02-2019)<font color="#FFFFFF">&#160;&#160;President
+                                of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice
+                                Karachi. <a
+                                  href="https://www.facebook.com/saylaniwelfare/posts/3135103563182232?__xts__[0]=68.ARD9PTgM3DL_2vvulRqQ-b25KUD2P8X7TSS9g6gbxDfRdIBqgjNGJffSbV0ZcFmUFF5Ocrn-wvtpvDbjWBQxq0UHTlRJR1vEkgUOfm8Vk0ltcQp9K5q268QBcUMjujlPyCnBIxXcbe_Qjqbw1DXfCLQ1fFwBdGk77ndYxRXPrUVHrYybrBb5jWxu8GJQ37RpI7LLayc6xkve6gO149Ud-NWv_eF72blzToVI2fZW2ZWJUlRFSgWFK5jgrDGcsP-I7NBis9UXNfBBb55nXahKzJHvloneJh93hN9Wc3bIyvpn7v1IJSixyqcGRr_KHC-mO46gL9JUYx_acVfGdQDLUCBORw&__tn__=-R>"
+                                  style="color: blue">More Details</a> &#160;&#160;
+                                <font color="#00FF00">(News-7 Dated:19-02-2019)<font color="#FFFFFF">&#160;&#160;Dr
+                                    Jamil Ahmed (Additional Inspector General of Police) & Atiqmir Visit Saylani Welfare
+                                    International Trust, Saylani Mass I.T. Training. <a
+                                      href="https://www.facebook.com/saylaniwelfare/posts/3124996217526300?__xts__[0]=68.ARCElwXqFXBXobZcA_UIl5WsTnqek6hA0692UZgzLiTQcX71VvEVoMgzqDV_LCU8l4vgjmKHex8j5abeGcQPzz-0Vo7g8gNqrP0CK04uhT29KI7ZBXw7L0UhSE9vpr7JOS4591gwSiYhmPbI_exl5O0PUbYyqzRyVjDhZf833fadxaHMxR3LURDcRfhfFRurM3x6cKNgZ7XwQi2vP6tA2-XS4HUzYNRUfZ5Yc4iUJAwXHOGi64EA62Drmy5c0mv0CZumqreWzE6JGBGOlQC5dMh7k07-qNBGwItqzarzu8CiNWC9kZMwzYyExhOY7JKF76U1ZzEbClh6A-yQYJ-qY1jbYQ&__tn__=-R>"
+                                      style="color: blue">More Details</a> &#160;&#160;
+      </marquee>
+    </p>
+
+  </div>
+  <!-- Marque Closed -->
+  <!-- container -->
+  <div class="container">
+    <h2 style="color: blue;">INTRO<span style="color: green;">DUCTION</span></h2>
+    <img src="icon.webp" style="text-align: center;
+                                          height: 50px;
+                                          width: 50px;
+                                          box-shadow: 2px 2px 10px rgb(129, 126, 126);" alt="">
+
+    <p class="intro-about">Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed
+      Farooqui, Saylani
+      Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the
+      financial
+      troubles of the poor, giving people a chance to live a dignified life and spreading happiness.
+      <br>
+      <br>
+      We are an organization that believes in lighting up the lives of underprivileged people across the world. We
+      endeavor to provide the best quality services in areas including food, education, medical and social welfare free
+      of cost to people living in the dark. With over 60 different sectors, we feed thousands of hungry people each day,
+      hundreds more are given the hope of life through medical health care, many are educated to become leaders of
+      tomorrow and several are given the opportunity to stand on their feet financially.
+      <br>
+      <br>
+      Today, we are proud to say that our physical presence extends throughout Pakistan with a vast network of 125
+      branches operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and
+      Faisalabad. Apart from Pakistan, we have overseas offices in the UK, USA and UAE as well. Our worldwide
+      branches are operating under the guidance of a team of over 2,000 working professionals who help almost
+      125,000 people on a daily basis.
+      <br>
+      <br>
+      We strongly believe that a little help goes a long way and our work would not be possible without the generous
+      support of our valuable donors. Our local and international donors have graciously lent us a hand by supporting
+      our causes and enabling us to serve the needs of people in need. <br>
+      <br>
+      <br>
+      <br>
+
+    </p>
+  </div>
+
+
+  <!-- container Closed -->
+  <!-- Values -->
+  <div class="value">
+
+    <div class="num">
+      <img src="icon_food.png" style="height: 40px;width: 30px" alt="">
+      <h2>125,000</h2>
+      <h5>DAILY DASTARKHAWN <span style="color: green;">(MONTHLY)</SPan></h5>
+
+
+    </div>
+    <div class="num">
+      <img src="icon_family.png" style="height: 40px;width: 30px" alt="">
+      <h2>12,500</h2>
+      <h5>FAMILY ADOPTION<span style="color: green;">(MONTHLY)</h5>
+
+    </div>
+    <div class="num">
+      <img src="icon_medical_png.png" style="height: 40px;width: 30px" alt="">
+      <h2>43,479</h2>
+      <h5>MADICAL<span style="color: green;">(MONTHLY)</h5>
+    </div>
+    <div class="num">
+      <img src="icon_education_png.png" style="height: 40px;
+      width: 30px;" alt="">
+      <h2>180,000</h2>
+      <h5>EDUCATION<span style="color: green;">(MONTHLY)</h5>
+    </div>
+
+
+  </div>
+  <!-- vALUES Closed -->
+  <!-- What we are doing -->
+
+
+  <section>
+    <h2 style="color: blue;">WHAT WE <span style="color: green;">ARE DOING?</span></h2>
+    <img src="" style="text-align: center;
+                                                                  height: 50px;
+                                                                  width: 50px;
+                                                                  box-shadow: 2px 2px 10px rgb(129, 126, 126);" alt="">
+    <br><br>
+
+    <div class="we-do">
+      <div class="do">
+        <img src="onlinesadqah.png" style="width: 60px;
+                                            height: 60px;" alt="">
+        <h4>ONLINE SADQAH</h4>
+
+
+      </div>
+      <div class="do">
+        <img src="welfare.png" style="width: 60px;
+    height: 60px;" alt="">
+        <h4>WELFARE</h4>
+
+
+      </div>
+      <div class="do">
+        <img src="medical.png" style="width: 60px;
+    height: 60px;" alt="">
+        <h4>MADICAL</h4>
+
+
+      </div>
+      <div class="do">
+        <img src="Dastarkhwan.png" style="width: 60px;
+    height: 60px;" alt="">
+        <h4>DASTARKHAWN</h4>
+
+
+      </div>
+      <div class="do">
+        <img src="ROPLANT.png" style="width: 60px;
+    height: 60px;" alt="">
+        <h4>RO PLANT</h4>
+
+
+      </div>
+      <div class="do">
+        <img src="education.png" style="width: 60px;
+                                            height: 60px;" alt="">
+        <h4>EDUCATION</h4>
+
+      </div>
+
+
+
+    </div>
+  </section>
+  <!-- what we do Closed -->
+  <!-- mission and projects -->
+  <section class="mission-container">
+    <h2 style="text-align: center;
+  color:green;">MISSION AND UPCOMING PROJECTS</h2>
+    <div class="mission-main">
+      <div class="mission-box">
+
+        <div class="box"> <img src="Hepatitis.png" alt=""> Hepatitas</div>
+        <div class="box"> <img src="housing.png" alt=""> Housing Societies</div>
+        <div class="box"> <img src="IT.png" alt=""> IT Literecy</div>
+        <div class="box"><img src="tharparkar.png" alt=""> Tharparkar</div>
+
+      </div>
+      <div>
+        <h3 style="text-align: justify;
+    color:green;">Upcoming Events</h3>
+        <p>
+
+          <marquee direction="up" width="250" height="200" scrollamount="6" onmouseover="this.stop();"
+            onmouseout="this.start();">
+            Saylani Welfare Distributing Ration & Clothes to affected people of Balochistan .<a
+              href="https://www.facebook.com/saylaniwelfare/posts/3164679946891260?__tn__=-R" style="color: blue">More
+              Details</a> <br><br>
+            Entry Test Accouncement (Graphic Designing & Video Editing/Animation Course) On Sunday 3rd March 2019 @
+            11:00Am Vanue: 4rh Floor, Saylani Welfare International Trust HeadOffice Bahadurabad .<a
+              href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3152781434747778/?type=3&theater>"
+              style="color: blue">More Details</a> <br><br>
+            Dr Jamil Ahmed (Additional Inspector General of Police) & Atiqmir Visit Saylani Welfare International Trust,
+            Saylani Mass I.T. Training .<a
+              href="https://www.facebook.com/saylaniwelfare/posts/3124996217526300?__xts__[0]=68.ARCElwXqFXBXobZcA_UIl5WsTnqek6hA0692UZgzLiTQcX71VvEVoMgzqDV_LCU8l4vgjmKHex8j5abeGcQPzz-0Vo7g8gNqrP0CK04uhT29KI7ZBXw7L0UhSE9vpr7JOS4591gwSiYhmPbI_exl5O0PUbYyqzRyVjDhZf833fadxaHMxR3LURDcRfhfFRurM3x6cKNgZ7XwQi2vP6tA2-XS4HUzYNRUfZ5Yc4iUJAwXHOGi64EA62Drmy5c0mv0CZumqreWzE6JGBGOlQC5dMh7k07-qNBGwItqzarzu8CiNWC9kZMwzYyExhOY7JKF76U1ZzEbClh6A-yQYJ-qY1jbYQ&__tn__=-R>"
+              style="color: blue">More Details</a> <br><br>
+            PIAIC Entrance Exam Merit Ranking List Announced.<a href="https://www.saylaniwelfare.com/result"
+              style="color: blue">More Details</a> <br><br> President of Pakistan (Dr. Arif Alvi) Visited Saylani
+            Welfare International Trust HeadOffice Karachi. <a
+              href="https://www.facebook.com/saylaniwelfare/posts/3135103563182232?__xts__[0]=68.ARD9PTgM3DL_2vvulRqQ-b25KUD2P8X7TSS9g6gbxDfRdIBqgjNGJffSbV0ZcFmUFF5Ocrn-wvtpvDbjWBQxq0UHTlRJR1vEkgUOfm8Vk0ltcQp9K5q268QBcUMjujlPyCnBIxXcbe_Qjqbw1DXfCLQ1fFwBdGk77ndYxRXPrUVHrYybrBb5jWxu8GJQ37RpI7LLayc6xkve6gO149Ud-NWv_eF72blzToVI2fZW2ZWJUlRFSgWFK5jgrDGcsP-I7NBis9UXNfBBb55nXahKzJHvloneJh93hN9Wc3bIyvpn7v1IJSixyqcGRr_KHC-mO46gL9JUYx_acVfGdQDLUCBORw&__tn__=-R>"
+              style="color: blue">More Details</a>
+          </marquee>
+
+        </p>
+
+      </div>
+    </div>
+    <br>
+    <br><br>
+  </section>
+
+
+  <section class="images">
+
+    <h2 style="color: blue;">Image <span style="color: green;">Gallery</h2>
+    <img src="images/favicon.png" style="text-align: center;
+                                          height: 50px;
+                                          width: 50px;" alt=""><br><br><br>
+
+    <div>
+
+      <img src="hazrat.jpg" alt="">
+      <img src="hazrat2.jpg" alt="">
+      <img src="rashan2 (1).jpg" alt="">
+      <img src="food.jpg" alt="">
+      <img src="hazrat.jpg" alt="">
+      <img src="food.jpg" alt="">
+      <br><br><br><br>
+
+    </div>
+  </section>
+
+  <!-- images Closed -->
+  <!-- Footer -->
+
+
+
+  <footer class="footer">
+    <div>
+      <p style="font-size: 22px;">Head Office</p>
+      <p> A-25, Bahadurabad Chowrangi
+        Karachi, Pakistan </p>
+      <ul>
+        <li> <i class="fa fa-phone "></i>UAN: 111-729-526 </li>
+        <li> <i class="fa fa-globe "></i>(+0092-213) 4130786-90</li>
+        <li> <i class="fa fa-phone "></i>CELL: 92-311-1729526</li>
+        <li> <i class="fa fa-phone "></i>USA NO +1(716)941 7792 </li>
+        <li> <i class="fa fa-phone "></i>UK NO (+44)115 970 6256 </li>
+
+      </ul>
+    </div>
+    <div>
+      <p style="font-size: 22px;"> Useful links
+    </div>
+    </p>
+    <div>
+      <p style="font-size: 22px;"> Contact with us</p>
+
+      <i class="fa fa-facebook "></i></a>
+      <i class="fa fa-twitter "></i></a>
+      <i class="fa fa-instagram "></i></a>
+      <i class="fa fa-youtube "></i></a>
+      <i class="fa fa-whatsapp "></i></a>
+    </div>
+
+    <br><br>
+
+  </footer>
+  <br><br>
+
+  <div class="copy-r">
+
+    <p style="color:white;">Copyright © 2020 Saylani Welfare </p>
+    <p style="color:white;">Developed By ZAB web developer </p>
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
